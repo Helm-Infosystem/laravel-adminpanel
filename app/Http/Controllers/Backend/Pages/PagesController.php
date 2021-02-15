@@ -28,8 +28,8 @@ class PagesController extends Controller
      */
     public function __construct(PagesRepository $repository)
     {
-        $this->repository = $repository;
-        View::share('js', ['pages']);
+        /*$this->repository = $repository;
+        View::share('js', ['pages']);*/
     }
 
     /**
@@ -39,7 +39,7 @@ class PagesController extends Controller
      */
     public function index(ManagePageRequest $request)
     {
-        return new ViewResponse('backend.pages.index');
+       /* return new ViewResponse('backend.pages.index');*/
     }
 
     /**
@@ -49,7 +49,7 @@ class PagesController extends Controller
      */
     public function create(CreatePageRequest $request)
     {
-        return new ViewResponse('backend.pages.create');
+       /* return new ViewResponse('backend.pages.create');*/
     }
 
     /**
@@ -59,9 +59,9 @@ class PagesController extends Controller
      */
     public function store(StorePageRequest $request)
     {
-        $this->repository->create($request->except(['_token', '_method']));
+       /* $this->repository->create($request->except(['_token', '_method']));
 
-        return new RedirectResponse(route('admin.pages.index'), ['flash_success' => __('alerts.backend.pages.created')]);
+        return new RedirectResponse(route('admin.pages.index'), ['flash_success' => __('alerts.backend.pages.created')]);*/
     }
 
     /**
@@ -72,7 +72,7 @@ class PagesController extends Controller
      */
     public function edit(Page $page, EditPageRequest $request)
     {
-        return new EditResponse($page);
+       /* return new EditResponse($page);*/
     }
 
     /**
@@ -83,9 +83,9 @@ class PagesController extends Controller
      */
     public function update(Page $page, UpdatePageRequest $request)
     {
-        $this->repository->update($page, $request->except(['_token', '_method']));
+        /*$this->repository->update($page, $request->except(['_token', '_method']));
 
-        return new RedirectResponse(route('admin.pages.index'), ['flash_success' => __('alerts.backend.pages.updated')]);
+        return new RedirectResponse(route('admin.pages.index'), ['flash_success' => __('alerts.backend.pages.updated')]);*/
     }
 
     /**
@@ -96,8 +96,8 @@ class PagesController extends Controller
      */
     public function destroy(Page $page, DeletePageRequest $request)
     {
-        $this->repository->delete($page);
+       /* $this->repository->delete($page);
 
-        return new RedirectResponse(route('admin.pages.index'), ['flash_success' => __('alerts.backend.pages.deleted')]);
+        return new RedirectResponse(route('admin.pages.index'), ['flash_success' => __('alerts.backend.pages.deleted')]);*/
     }
 }

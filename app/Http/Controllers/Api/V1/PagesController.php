@@ -59,9 +59,9 @@ class PagesController extends APIController
      */
     public function index(ManagePageRequest $request)
     {
-        $collection = $this->repository->retrieveList($request->all());
+       /* $collection = $this->repository->retrieveList($request->all());
 
-        return PagesResource::collection($collection);
+        return PagesResource::collection($collection);*/
     }
 
     /**
@@ -82,7 +82,7 @@ class PagesController extends APIController
      */
     public function show(ManagePageRequest $request, Page $page)
     {
-        return new PagesResource($page);
+        /*return new PagesResource($page);*/
     }
 
     /**
@@ -99,11 +99,11 @@ class PagesController extends APIController
      */
     public function store(StorePageRequest $request)
     {
-        $page = $this->repository->create($request->validated());
+      /*  $page = $this->repository->create($request->validated());
 
         return (new PagesResource($page))
             ->response()
-            ->setStatusCode(Response::HTTP_CREATED);
+            ->setStatusCode(Response::HTTP_CREATED);*/
     }
 
     /**
@@ -124,9 +124,9 @@ class PagesController extends APIController
      */
     public function update(UpdatePageRequest $request, Page $page)
     {
-        $page = $this->repository->update($page, $request->validated());
+        /*$page = $this->repository->update($page, $request->validated());
 
-        return new PagesResource($page);
+        return new PagesResource($page);*/
     }
 
     /**
@@ -146,8 +146,8 @@ class PagesController extends APIController
      */
     public function destroy(DeletePageRequest $request, Page $page)
     {
-        $this->repository->delete($page);
+       /* $this->repository->delete($page);
 
-        return response()->noContent();
+        return response()->noContent();*/
     }
 }

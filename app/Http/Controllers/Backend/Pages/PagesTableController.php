@@ -19,7 +19,7 @@ class PagesTableController extends Controller
      */
     public function __construct(PagesRepository $repository)
     {
-        $this->repository = $repository;
+       /* $this->repository = $repository;*/
     }
 
     /**
@@ -29,7 +29,7 @@ class PagesTableController extends Controller
      */
     public function __invoke(ManagePageRequest $request)
     {
-        return Datatables::of($this->repository->getForDataTable())
+        /*return Datatables::of($this->repository->getForDataTable())
             ->filterColumn('status', function ($query, $keyword) {
                 if (in_array(strtolower($keyword), ['active', 'inactive'])) {
                     $query->where('pages.status', (strtolower($keyword) == 'active') ? 1 : 0);
@@ -48,6 +48,6 @@ class PagesTableController extends Controller
                 return $page->action_buttons;
             })
             ->escapeColumns(['title'])
-            ->make(true);
+            ->make(true);*/
     }
 }
