@@ -66,16 +66,7 @@
 
                
 
-                <li class="divider"></li>
-
-                <li class="nav-item">
-                    <a class="nav-link {{
-                        active_class(Route::is('admin/faqs'))
-                    }}" href="{{ route('admin.faqs.index') }}">
-                        <i class="nav-icon fas fa-question-circle"></i>
-                        @lang('menus.backend.sidebar.faqs')
-                    </a>
-                </li>
+               
 
                 <li class="divider"></li>
 

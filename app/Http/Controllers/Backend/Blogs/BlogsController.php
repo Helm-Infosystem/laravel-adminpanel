@@ -77,7 +77,8 @@ class BlogsController extends Controller
         $blogCategories = BlogCategory::getSelectData();
         $blogTags = BlogTag::getSelectData();
 
-        return new EditResponse($blog, $blog->statuses, $blogCategories, $blogTags);
+    return new EditResponse($blog, $blog->statuses, $blogCategories, $blogTags);
+    
     }
 
     /**
