@@ -113,7 +113,7 @@
                     Admin Panel or Control Panel,  where administrators and other site officials with appropriate 
                     privileges can manipulate the look of a different layouts and panels .
                      There are many tasks which can be done with the administrator interface </p><br>
-                <a href="#"> Check More </a>
+                <a href="https://helminfosystem.com/"> Check More </a>
             </div>
         </div>  
         </div>        

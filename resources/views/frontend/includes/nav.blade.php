@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
     <!--<a href="{{ route('frontend.index') }}" class="navbar-brand">{{ app_name() }}</a>-->
-    <h3 style="font-family: serif;">Helm Infosystem </h3>
+    <img class="navbar-brand-full" src="{{ asset('img/backend/brand/logo.png') }}" width="238" height="55" alt="Helm Infosystem">
+        
 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="@lang('labels.general.toggle_navigation')">
         <span class="navbar-toggler-icon"></span>

@@ -278,41 +278,61 @@
                 <div class="card">
                     <div class="card-header">
                         <strong class="card-title">
-                            Recent Post By:
+                            List of Blogs:
                         </strong>
                         
             
                             <div class="card-body">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Post</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Nature</td>
-                                            <td>@Facebook</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Travel</td>
-                                            <td>@Instagram</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>Photography</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="row mt-4">
+            <div class="col">
+                <div class="table-responsive">
+                    <table id="blogs-category" class="table" data-ajax_url="{{ route("admin.dashboard.get") }}">
+                        <thead>
+                        <tr>
+                                <th>{{ trans('labels.backend.access.blogs.table.title') }}</th>
+                                <th>{{ trans('labels.backend.access.blogs.table.published') }}</th>
+                                <th>{{ trans('labels.backend.access.blogs.table.status') }}</th>
+                                <th>{{ trans('labels.backend.access.blogs.table.createdby') }}</th>
+                                <th>{{ trans('labels.backend.access.blogs.table.createdat') }}</th>
+                               <!-- <th>{{ trans('labels.general.actions') }}</th>-->
+                            </tr>
+                            <tr>
+                                <td>aut est quidem</td>
+                                <td>05/06/1993 02:15 AM</td>
+                                <td>InActive</td>
+                                <td>Bulah</td>
+                                <td>2021-02-15</td>
+                            </tr>
+                            <tr>
+                                <td>illo nostrum esse</td>
+                                <td>01/11/1991 06:06 AM</td>
+                                <td>InActive</td>
+                                <td>Bulah</td>
+                                <td>2021-02-15</td>
+                            </tr>
+                            <tr>
+                                <td>molestiae eos nostrum</td>
+                                <td>12/07/1997 10:36 PM</td>
+                                <td>Scheduled</td>
+                                <td>Bulah</td>
+                                <td>2021-02-15</td>
+                            </tr>
+                            <tr>
+                                <td>quo est odio</td>
+                                <td>29/12/1988 12:29 AM</td>
+                                <td>Scheduled</td>
+                                <td>Bulah</td>
+                                <td>2021-02-15</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--col-->
+        </div>
+        <!--row-->
                             </div>
                     </div>
                 </div>

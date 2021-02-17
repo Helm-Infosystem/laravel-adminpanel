@@ -5,8 +5,10 @@
                 {{ __('labels.backend.access.blog-category.management') }}
                 <small class="text-muted">{{ __('labels.backend.access.blog-category.create') }}</small>
             </h4>
-        </div><!--col-->
-    </div><!--row-->
+        </div>
+        <!--col-->
+    </div>
+    <!--row-->
 
     <hr>
 
@@ -17,8 +19,10 @@
                 
                 <div class="col-md-10">
                     {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => trans('validation.attributes.backend.access.blog-categories.name'), 'required' => 'required']) }}
-                </div><!--col-->
-            </div><!--form-group-->
+                </div>
+                <!--col-->
+            </div>
+            <!--form-group-->
 
             <div class="form-group row">
                 {{ Form::label('status', trans('validation.attributes.backend.access.blog-categories.status'), ['class' => 'col-md-2 from-control-label required']) }}
