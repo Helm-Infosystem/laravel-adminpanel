@@ -12,7 +12,8 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::get('/apiblog','ApiBlogController@datadisplayapi');
+Route::get('/apiblog/{id}','ApiBlogController@showdataapi');
 /*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });*/

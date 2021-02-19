@@ -14,7 +14,7 @@
                     <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownLanguageLink" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">@lang('menus.language-picker.language') ({{ strtoupper(app()->getLocale()) }})</a>
 
-                    @include('includes.partials.lang')
+                   <!-- @include('includes.partials.lang')-->
                 </li>
             @endif
 
